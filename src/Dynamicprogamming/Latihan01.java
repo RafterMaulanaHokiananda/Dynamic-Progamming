@@ -30,5 +30,17 @@ public class Latihan01 {
       
    
     
-       
+    private static int tampilInput()
+    {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        
+        return n;
+    }
+    
+    int n= tampilInput();
+    
+   
 }
