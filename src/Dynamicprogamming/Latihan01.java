@@ -25,6 +25,9 @@ public class Latihan01 {
          String identitas = " RAFTER MAULANA HOKIANANDA / XR2 / 27";
          
          tampilJudul(identitas);
+         int n= tampilInput();
+         BigInteger hasil = fibo(n);
+         tampilHasil(n, hasil);
     }
    
       
@@ -40,7 +43,7 @@ public class Latihan01 {
         return n;
     }
     
-    int n= tampilInput();
+    
     
     private static BigInteger fibo(int n)
     {
@@ -56,8 +59,12 @@ public class Latihan01 {
         
         return hasil[n-1];
     }
+      
     
-    BigInteger hasil = fibo(n);
+    private static void tampilHasil(int n, BigInteger hasil)
+    {
+        System.out.println("Bilangan Fibonacci ke-"+n+" : " + hasil);   
+    }
     
-   
+    
 }
