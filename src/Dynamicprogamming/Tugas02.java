@@ -19,6 +19,11 @@ public class Tugas02 {
         System.out.print("Jumlah berat maksimal : ");
         int n = sistem.nextInt();
         
-        
+        for (int i = 0; i < arr.length; i++) {
+            int hasil =  n / arr[i];
+            n = n - (arr[i] * hasil);
+            bayaran += hasil * arr1[i];
+        }
+        System.out.println("Bayaran yang didapat : " + bayaran);
     }
 }
