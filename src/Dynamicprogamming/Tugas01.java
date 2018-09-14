@@ -13,6 +13,9 @@ public class Tugas01 {
     {
         int[] nominal = {5000,2000,1000,500,100};
         Scanner key = new Scanner(System.in);
+        System.out.print(" .....");
+        int uang = key.nextInt();
+        
         
     }
 }
